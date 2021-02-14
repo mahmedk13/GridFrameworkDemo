@@ -39,7 +39,7 @@ public class FlightSearchTest extends BaseTest {
 		fsp = hp.navigateToFlightTab();
 		fsrp =fsp.searchFlight(origin, destination, checkinDate, checkoutDate);
 		String title = fsrp.fetchTitle();
-		System.out.println("title is "+title);
+		System.out.println("Title is "+title);
 		Assert.assertTrue(title.contains("Hyderabad"));
 	
 	}
