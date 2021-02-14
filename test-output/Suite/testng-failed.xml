@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="grid" value="false"/>
+  <listeners>
+    <listener class-name="extentlisteners.ExtentListeners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="Chrome Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://www.expedia.com/"/>
+    <classes>
+      <class name="testcases.FlightSearchTest">
+        <methods>
+          <include name="searchFlight" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testcases.FlightSearchTest -->
+    </classes>
+  </test> <!-- Chrome Test(failed) -->
+  <test thread-count="5" parallel="tests" name="Firefox Test(failed)">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="url" value="https://www.expedia.com/"/>
+    <classes>
+      <class name="testcases.FlightSearchTest">
+        <methods>
+          <include name="searchFlight" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testcases.FlightSearchTest -->
+      <class name="testcases.HotelSearchTest">
+        <methods>
+          <include name="init"/>
+          <include name="setUp"/>
+          <include name="searchHotel" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testcases.HotelSearchTest -->
+    </classes>
+  </test> <!-- Firefox Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

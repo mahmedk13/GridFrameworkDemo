@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="1" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-02-14T16:17:53Z" name="Suite" finished-at="2021-02-14T16:19:12Z" duration-ms="78945">
+    <groups>
+    </groups>
+    <test started-at="2021-02-14T16:17:53Z" name="Chrome Test" finished-at="2021-02-14T16:19:12Z" duration-ms="78518">
+      <class name="testcases.HotelSearchTest">
+        <test-method is-config="true" signature="init()[pri:0, instance:testcases.HotelSearchTest@635572a7]" started-at="2021-02-14T16:17:53Z" name="init" finished-at="2021-02-14T16:17:54Z" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.HotelSearchTest@635572a7]" started-at="2021-02-14T16:18:39Z" name="setUp" finished-at="2021-02-14T16:18:58Z" duration-ms="18607" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[https://www.expedia.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchHotel(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.HotelSearchTest@635572a7]" started-at="2021-02-14T16:18:58Z" name="searchHotel" data-provider="getData" finished-at="2021-02-14T16:19:11Z" duration-ms="12481" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Hyderabad]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Mar 18, 2021.]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Mar 22, 2021.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchHotel -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.HotelSearchTest@635572a7]" started-at="2021-02-14T16:19:11Z" name="tearDown" finished-at="2021-02-14T16:19:12Z" duration-ms="1390" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.HotelSearchTest -->
+      <class name="testcases.FlightSearchTest">
+        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.FlightSearchTest@79d94571]" started-at="2021-02-14T16:17:54Z" name="setUp" finished-at="2021-02-14T16:18:07Z" duration-ms="13522" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[https://www.expedia.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchFlight(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.FlightSearchTest@79d94571]" started-at="2021-02-14T16:18:09Z" name="searchFlight" data-provider="getData" finished-at="2021-02-14T16:18:35Z" duration-ms="26619" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Delhi]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Hyderabad]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Mar 19, 2021.]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Mar 23, 2021.]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at testcases.FlightSearchTest.searchFlight(FlightSearchTest.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchFlight -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.FlightSearchTest@79d94571]" started-at="2021-02-14T16:18:36Z" name="tearDown" finished-at="2021-02-14T16:18:39Z" duration-ms="3169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.FlightSearchTest -->
+    </test> <!-- Chrome Test -->
+    <test started-at="2021-02-14T16:17:53Z" name="Firefox Test" finished-at="2021-02-14T16:19:12Z" duration-ms="78945">
+      <class name="testcases.HotelSearchTest">
+        <test-method is-config="true" signature="init()[pri:0, instance:testcases.HotelSearchTest@cd1d761]" started-at="2021-02-14T16:17:53Z" name="init" finished-at="2021-02-14T16:17:54Z" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.HotelSearchTest@cd1d761]" started-at="2021-02-14T16:18:31Z" name="setUp" finished-at="2021-02-14T16:18:57Z" duration-ms="26241" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[https://www.expedia.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchHotel(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.HotelSearchTest@cd1d761]" started-at="2021-02-14T16:18:57Z" name="searchHotel" data-provider="getData" finished-at="2021-02-14T16:19:07Z" duration-ms="9740" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Hyderabad]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Mar 18, 2021.]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Mar 22, 2021.]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at testcases.HotelSearchTest.searchHotel(HotelSearchTest.java:63)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchHotel -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.HotelSearchTest@cd1d761]" started-at="2021-02-14T16:19:08Z" name="tearDown" finished-at="2021-02-14T16:19:12Z" duration-ms="4073" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.HotelSearchTest -->
+      <class name="testcases.FlightSearchTest">
+        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.FlightSearchTest@68be8808]" started-at="2021-02-14T16:17:54Z" name="setUp" finished-at="2021-02-14T16:18:15Z" duration-ms="21830" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[https://www.expedia.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchFlight(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.FlightSearchTest@68be8808]" started-at="2021-02-14T16:18:15Z" name="searchFlight" data-provider="getData" finished-at="2021-02-14T16:18:28Z" duration-ms="12077" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Delhi]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Hyderabad]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Mar 19, 2021.]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Mar 23, 2021.]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at testcases.FlightSearchTest.searchFlight(FlightSearchTest.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchFlight -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.FlightSearchTest@68be8808]" started-at="2021-02-14T16:18:28Z" name="tearDown" finished-at="2021-02-14T16:18:31Z" duration-ms="3200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.FlightSearchTest -->
+    </test> <!-- Firefox Test -->
+  </suite> <!-- Suite -->
+</testng-results>
